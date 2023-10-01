@@ -29,14 +29,17 @@
 // var countNumbers;
 
 // Q2. Declare a variable of your choice without defining it. Then, in a second statement, assign it a string of your choice.
+
 // firstName;
 // firstName = "Shiraz";
 
 // Q3. Declare the variable teamName and Alert your Team name.
+
 // var teamName = "Pakistan";
 // alert(teamName);
 
 // Q4. This statement has already been coded. var bestMan = "Charlie"; Assign the variable a new string.
+
 // var bestMan = "Charlie";
 // bestMan = "Quaid e Azam";
 
@@ -52,17 +55,20 @@
 // var num = 9;
 
 // Q4. In one statement declare a variable. In a second statement assign it the sum of 2 numbers
+
 // var sum
 // sum = 5 + 3
 // alert(sum)
 
 // Q5. What is the value of orderTotal?
+
 // var merchTotal = 100;
 // var shippingCharge = 10;
 // var orderTotal = merchTotal + shippingCharge;
 // orderTotal = 110
 
 // Q6. In the first statement declare a variable and assign it a number. In the second statement, change the value of the variable by adding it together with a number.
+
 // var x = 4
 // x = x + 5
 // alert(x);
@@ -79,10 +85,12 @@
 // var my_number = 9;
 
 // Q4. Declare a variable that is a combination of your first and last names. Use camelCase.
+
 // var fullName = "Shiraz Shaikh";
 // alert(fullName);
 
 // Q5. List the legal and Illegal Variables.
+
 // Legal Variables:-
 // var car;
 // var myCar;
@@ -105,10 +113,12 @@
 // var num = 20 % 6 => 2
 
 // Q3. In a single statement, declare the variable largeNum and assign it the result of 1,000 multiplied by 2,000.
+
 // var largeNumber = 1000 * 2000;
 // alert(largeNumber);
 
 // Q4. Assign to a variable the value represented by one variable subtracted from the value represented by another variable
+
 // var num1 = 9;
 // var num2 = 6;
 // var result = num1 - num2;
@@ -118,6 +128,7 @@
 // var remainder = 15 % 6;
 
 // Q6. Code an alert that displays the result of a multiplication on 2 numbers.
+
 // var num1 = 4;
 // var num2 = 6;
 // var multiplication = num1 * num2;
@@ -126,15 +137,18 @@
 // ---------------------------- Chapter-6 (Math Expression II) --------------------------------------------
 
 // Q1. Code a short form of x = x + 1; Use either of the two legal expressions.
+
 // var x;
 // x+=1;
 
 // Q2. If x has a value of 100, what is the fastest way to reduce it to 99 with a math expression?
+
 // var x = 100;
 // x-=1;
 // alert(x)
 
 // Q3. var x = 50;
+
 // var y = x++;
 // What is the value of y?
 // y = 51
@@ -142,6 +156,7 @@
 // Q4. var y = 50;
 // var z = --y;
 // What is the value of z?
+
 // z = 49
 
 // Q5. In a single statement, decrement num and assign its original value to newNum.
@@ -153,6 +168,7 @@
 // Q7. Assign a number value to a variable.
 // Increment the variable.
 // Display the new value in an alert
+
 // var increment = 100
 // increment++;
 // alert(increment);
@@ -190,6 +206,7 @@
 
 // Q3. alert("33" + 3); What message displays in the alert box?
 // alert => "333";
+
 // Q4. Write an alert that displays the concatenation of the two parts of "Pakistan Zindabad".
 // alert ("Pakistan" +  " Zindabad");
 
@@ -197,6 +214,7 @@
 // var concatenate =  "October" + 14;
 
 // Q6. Assign strings to two variables. Then concatenate them and assign the result to a third variable.
+
 // var firstName = "Shiraz";
 // var lastName = "Shaikh";
 // var fullName = firstName + lastName;
@@ -205,6 +223,7 @@
 // --------------------------------------- Chapter-9 (Prompt) ------------------------------------------
 
 // Q1. Code a prompt with the message "Enter first name". The user's response is assigned to firstName.
+
 // var inp = prompt("Enter First Name");
 // alert("Hello " + inp);
 
@@ -218,11 +237,13 @@
 // var inp = prompt("Enter Your Favorite Team","Pakistan");
 
 // Q5. Assign strings to two variables. Code a prompt specifying the first variable as the message and the second variable as the default response. Assign the user's response to a third variable.
+
 // var message = "Please Enter Your Name";
 // var defaultResponse = "Shiraz Shaikh";
 // var userResponse = prompt(message, defaultResponse);
 
 // Q6. Display a prompt, including both a message and a default response. Display the user's response in an alert.
+
 // var message = "Please Enter Your Name";
 // var defaultResponse = "Shiraz Shaikh";
 // var userResponse = prompt(message, defaultResponse);
@@ -258,6 +279,7 @@
 // }else{
 //     alert("Please Write Correct City!!");
 // }
+
 // Q4. Code an if statement. Test whether a variable has a particular numerical value. If so, assign a new value to that variable, as in x = 1;
 
 // var x = 5;
@@ -274,18 +296,21 @@
 // if(x >= y)
 
 // Q3. Code an if statement. Test whether a variable is unequal to a particular number. If so, assign a number to that variable.
+
 // var x = 2 
 // if(x !== 5 ){
 //     x = 8
 // }
 
 // Q4. Code an if statement that tests whether a number is unequal to a different number. If the condition is true (it will be), display a congratulations alert.
+
 // var x = 5 , y = 6
 // if (x !== y){
 //     alert("Congratulations!!");
 // }
 
 // Q5. Code a prompt asking for your first name. Code an if statement that tests whether the name you entered is unequal to another name. If the condition is true (it will be), display an alert that says "No match"
+
 // var inpName = prompt("Enter Your First Name")
 // if(inpName !== "Shiraz"){
 //     alert("No Match");
@@ -295,20 +320,83 @@
 
 // Q1. Code an if statement that tests whether the value represented by a variable is greater than or equal to the value represented by another variable. If so, display an alert. If not, display a different alert.
 
+// var num1 = Number(prompt("Enter First Number"));
+// var num2 = Number(prompt("Enter Second Number"));
+// if (num1 >= num2){
+//     alert(num1 + " is greater than or equal to " + num2);
+// }
+// else{
+//     alert(num1 + " is less than " + num2);
+// }
+
 // Q2. Write a program using if else and else if statement which take marks from user. And the program will calculate your percentage and give you grade A/C to Your percentage. (MARKSHEET)
+
+// var englishMarks = Number(prompt("Enter English Marks"));
+// var urduMarks = Number(prompt("Enter Urdu Marks"));
+// var islamiyatMarks = Number(prompt("Enter Islamiyat Marks"));
+// var physicsMarks = Number(prompt("Enter Physics Marks"));
+// var chemistryMarks = Number(prompt("Enter Chemistry Marks"));
+// var mathMarks = Number(prompt("Enter Math Marks"));
+// var obtainMarks = englishMarks + urduMarks + islamiyatMarks + physicsMarks + chemistryMarks + mathMarks;
+// var totalMarks = 600;
+// var percentage = obtainMarks * 100 / totalMarks;
+
+// alert("Your Obtain Marks is " + obtainMarks);
+// alert("Your Percentage is " + percentage+"%");
+
+// if(percentage >= 80){
+//     alert("You got A1 Grade")
+// }
+// else if(percentage >=70 && percentage < 80){
+//     alert("You got A Grade")
+// }
+// else if(percentage >=60 && percentage < 70){
+//     alert("You got B Grade")
+// }
+// else if(percentage >=50 && percentage < 60){
+//     alert("You got C Grade")
+// }
+// else if(percentage >=40 && percentage < 50){
+//     alert("You got D Grade")
+// }
+// else if(percentage < 40){
+//     alert("You are Fail!!")
+// }
+// else{
+//     alert("Wrong Input!!")
+// }
 
 // Q3. This is the if statement that begins the code.
 // if (a === 10) {
 //  alert("a is 10");
 // }
-// If a isn't 10, display an alert that says The correct value of a is
-// ____
+// If a isn't 10, display an alert that says The correct value of a is ____
+
+// var a = Number(prompt("Enter Number"));
+// if(a === 10){
+//     alert("a is 10")
+// }
+// else if (a !== 10){
+//     alert("The Correct Value of a is " + a);
+// }
+
 
 // Q4. Prompt the user to enter a city.
 // If the city is Karachi, display an alert acknowledging it is Karachi.
 // If not, check to see if it's Lahore.
 // If it is, display an alert acknowledging it's Lahore.
 // Otherwise, display a different alert.
+
+// var city = prompt("Enter City");
+// if(city === "Karachi"){
+//     alert("It's Karachi");
+// }
+// else if(city === "Lahore"){
+//     alert("It's Lahore");
+// }
+// else{
+//     alert("This is a different City!!");
+// }
 
 // --------------------------------- Chapter-13 (Testing Sets of Conditions) --------------------------------
 
