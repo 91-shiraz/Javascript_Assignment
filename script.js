@@ -437,6 +437,18 @@
 
 // Q1. Code an if statement enclosing a nested if. If password is not empty, then check if password is not greater than 5 , then display an alert that says "Password must be greater than 5" if greater than 5 then Alert "OK".
 
+// var password = prompt("Enter Passcode");
+// if( password != ""){
+//     if(password.length < 5){
+//         alert("Password must be Greater than 5");
+//     }
+//     else{
+//         alert("OK");
+//     }
+// }else{
+//     alert("Password cannot be Empty!!");
+// }
+
 // Q2. Try this statement by yourself
 // if (a === 1) {
 // if (c === "Max") {
@@ -450,33 +462,78 @@
 // alert("OK");
 //  }
 // }
+
+// if(a === 1 && c === "Max"){
+//     alert("OK");
+// }
+
 // Q4. Declare two variables and assign them the same number value. Test two conditions, using nested if statements. Test whether the first variable equals the second variable and also whether it is less than or equal to the second variable. If the test passes—and it will—display an alert message.
+
+// var num1 = 87
+// var num2 = 87
+// if(num1 == num2){
+//     if(num1 <= num2){
+//         alert("Both Conditions are True: num1 equals num2 and is Less than or equal to num2");
+//     }
+// }
 
 // ------------------------------------ Chapter-15 (Array I) --------------------------------------------
 
 // Q1. Declare an empty array.
+// var arr = [];
 
 // Q2. Code an array with 1 string element
+// var myArray = ["Apple"];
 
 // Q3. var alphabet = ["h","i","j","k"]. Now print the letter “j” in alert using array index
 
+// var alphabet = ["h","i","j","k"]
+// alert(alphabet[2]);
+
 // Q4. var alphabet=["h","i","j","k", “l”,”m”, “n”, “o”]. Find the total length of array.
 
+// var alphabet=["h","i","j","k", "l","m", "n", "o"]
+// alert("The Total Length of Array is " + alphabet.length);
+
 // Q5. Declare an array with one element and Add a second element with index in array. Create an alert whose message is the new element.
+
+// var myArray = ["Apple"];
+// myArray[1] = "Aeroplane";
+// alert(myArray[1]);
 
 // ------------------------------------ Chapter-16 (Array II) ----------------------------------------
 
 // Q1. Code an array with 1 string element. Add an additional element to the array using push. Create an alert whose message is the last element.
 
+// var myArray = ["Civic", "Corolla"];
+// myArray.push ("Honda City");
+// alert(myArray[myArray.length-1]);
+
 // Q2. var Alphabet=["h","i","j","k"] Remove the last element from the array Alphabet.
 
+// var alphabet = ["h","i","j","k"];
+// alphabet.pop();
+// alert(alphabet);
+
 // Q3. var Alphabet=["h","i","j","k"] Add a new element, a number, to the end of an array.
+
+// var alphabet = ["h","i","j","k"];
+// alphabet.push(9);
+// alert(alphabet);
 
 // -----------------------------------------Chapter-16 (Array III) -------------------------------------
 
 // Q1. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Remove the first element of an array.
 
+// var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+// sizes.shift()
+// alert(sizes);
+
 // Q2. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Add three number elements to the beginning of an array.
+
+// var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+// sizes.unshift(1,2,3);
+// alert(sizes);
 
 // Q3. Declare an array with one element. Add a second element to the beginning of the array. Create an alert whose message is the new first element.
 
