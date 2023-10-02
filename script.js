@@ -667,3 +667,165 @@
 // var secondArr = [1, 2, 3, 4, 5, 6];
 // Code the first line of a for loop with the usual counter, the usual starting value, and the usual incrementing. Limit the number of loops by the number of elements in the array firstArr. In the scope of main loop Code the nested loop. Limit the number of nested loops by the number of elements in the array secondArr. After that concatenate the both loops. Expected Output: a1 a2 a3 a4 … f6.
 
+// var firstArr = ["a", "b", "c", "d", "e", "f"];
+// var secondArr = [1, 2, 3, 4, 5, 6];
+// for (var i=0; i<firstArr.length; i++){
+//     for(var j=0; j<secondArr.length; j++){
+//         document.write(firstArr[i], secondArr[j]+ " ");
+//     }
+// }
+
+//------------------------------------ Chapter-21 (Changing Case) ------------------------------------------
+
+// Q1. Type the characters that are missing from this code. var allLower = userInput.toLowerCase; Note: Correct this statement by yourself.
+
+// var allLower = userInput.toLowerCase();
+
+// Q2. Convert the string represented by x to lower-case and assign the result to the same variable.
+
+// var x = "Hello World!!";
+// x = x.toLowerCase();
+// alert(x);
+
+// Q3. Convert the string represented by y to upper-case and assign the result to the same variable.
+
+// var y = "Hello Pakistan!!";
+// y = y.toUpperCase()
+// alert(y);
+
+// Q4. Convert the string represented by a variable to lower-case and assign the result to a second variable that hasn't been declared beforehand.
+
+// var x = "Pakistan Zindabad!!";
+// var y = x.toLowerCase();
+// alert(y);
+
+// Q5. Convert the string represented by an array element to lower-case and assign it to a variable that hasn't been declared beforehand.
+
+// var myArray = ["CAT","LION", "GOAT", "COW"];
+// var myArrayToLower = myArray[0].toLowerCase();
+// alert(myArrayToLower);
+
+// Q6. Display in an alert the upper-case version of the string represented by a variable.
+
+// var x = "pakistan Zindabad!!";
+// alert(x.toUpperCase());
+
+// Q7. var cityName = “kaRacHi”; Convert the string represented by a cityName in Capitalisation is the writing of a word with its first letter in uppercase and the remaining letters in lowercase
+
+// var cityName = "kaRacHi";
+// cityName = cityName.charAt(0).toUpperCase() + cityName.slice(1).toLowerCase();
+// alert(cityName);
+
+// -------------------------------------- Chapter 22-25 (Strings) ------------------------------------------
+
+// Q1. "captain" has been assigned to variable “sameWords”. You want to slice "ap" out of it.
+
+// var sameWords = "captain";
+// var str = sameWords.slice(1,3);
+// alert(str);
+
+// Q2. The number of characters in the string will be assigned to the variable.
+
+// var str = "Hello World!!";
+// var strLen = str.length;
+// alert(strLen);
+
+// Q3. The string "elephant" has been assigned to the variable animal. Slice the four middle characters out of the string and assign it to the variable seg, which hasn't been declared beforehand.
+
+// var animal = "elephant"; 
+// var seg = animal.slice(2,6);
+// alert(seg);
+
+// Q4. Find the number of characters in the string represented by a variable and assign the number to a second variable.
+
+// var str = "Hello World!!";
+// var strLen = str.length;
+// alert(strLen);
+
+// Q5. In a first statement measure how many characters there are in a string represented by a variable. In a second statement slice all but the first character and last 3 characters of the string and assign it to a second variable that hasn't been declared beforehand.
+
+// var animal = "Elephant";
+// var strLen = animal.length;
+// alert(strLen);
+// var sliceChar = animal.slice(1,-3);
+// alert(sliceChar);
+
+// Q6. var text = "To be or not to be.";
+// var indx = text.indexOf("be");
+// What is the value of indx?
+
+// var text = "To be or not to be.";
+// var indx = text.indexOf("be");
+// alert(indx); //ans -> 3
+
+// Q7. var text = "To be or not to be.";
+// var indx = text.lastIndexOf("be");
+// What is the value of indx?
+// Note: Try the above both examples by yourself.
+
+// var text = "To be or not to be.";
+// var indx = text.lastIndexOf("be");
+// alert(indx); //ans -> 16
+
+// Q8. Find the index of the first character of the last instance of "go" in the string represented by the variable text and assign the number to the variable indx, which hasn't been declared beforehand.
+
+// var text = "This is a go-go game and I love to go there to play go.";
+// var indx = text.lastIndexOf("go");
+// alert(indx);
+
+// Q9. Code the first line of an if statement that tests whether a segment with an index represented by indexNum exists in a string.
+
+// var str = "Pakistan Zindabad!!";
+// var indexNum = 7;
+// if(str.charAt(indexNum));
+
+// Q10. In this string "abcde", what character is at index 2? (Use charAt)
+
+// var str = "abcde";
+// str = str.charAt(2);
+// alert(str);
+
+// Q11. Find the 10th character in the string represented by text and assign it to the variable cha, which hasn't been declared beforehand.
+
+// var text = "This is a go-go game and I love to go there to play go.";
+// var cha = text.charAt(9);
+// alert(cha);
+
+// Q12. Find the last character in the string represented by str and assign it to x, which hasn't been declared beforehand.
+
+// var str = "Once Upon a Time in Pakistan. There was a President";
+// var x = str.charAt(str.length-1);
+// alert(x);   
+
+// Q13. Find the the 5th character in a string represented by input and assign it to cha, which hasn't been declared beforehand.
+
+// var input = "ICC Cricket World Cup 2023";
+// var cha = input.charAt(4);
+// alert(cha);   
+
+// Q14. Code the first line of an if statement that tests whether the 3rd character of a string represented by a variable is a particular character.
+
+// var input = "ICC Cricket World Cup 2023";
+// var cha = "C";
+// if(input.charAt(2) === cha);
+
+// Q15. Code a for loop that cycles through all the characters of a string represented by a variable and assigns each character to an element of an array that has been declared beforehand. In the string represented by reply replace the first instance of "no" with "yes" and assign the revised string to revisedReply, which hasn't been declared beforehand.
+
+// var charArray = [];
+// var reply = "no, not really no";
+// for (var i = 0; i < reply.length; i++) {
+//   charArray.push(reply.charAt(i));
+// }
+// var revisedReply = reply.replace("no", "yes");
+// alert(revisedReply);
+
+// Q16. In a string represented by str replace the first instance of "1" with "one" and assign the revised string to newStr, which hasn't been declared beforehand.
+
+// var str = "This is 1 example with 1 number 1";
+// var newStr = str.replace("1", "one");
+// alert(newStr);
+
+// Q17. If you want all instances replaced, enter 3 characters that need to appear in this statement.
+// var y = x.replace("a", "z");
+
+// var y = x.replace(/a/g, "z");
