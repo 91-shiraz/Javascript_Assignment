@@ -30,7 +30,7 @@
 
 // Q2. Declare a variable of your choice without defining it. Then, in a second statement, assign it a string of your choice.
 
-// firstName;
+// var firstName;
 // firstName = "Shiraz";
 
 // Q3. Declare the variable teamName and Alert your Team name.
@@ -42,6 +42,7 @@
 
 // var bestMan = "Charlie";
 // bestMan = "Quaid e Azam";
+// alert(bestMan);
 
 //------------------------------- Chapter-3 (Variables For Numbers) ---------------------------------------
 
@@ -56,9 +57,9 @@
 
 // Q4. In one statement declare a variable. In a second statement assign it the sum of 2 numbers
 
-// var sum
-// sum = 5 + 3
-// alert(sum)
+// var sum;
+// sum = 5 + 3;
+// alert(sum);
 
 // Q5. What is the value of orderTotal?
 
@@ -82,7 +83,7 @@
 // var nameOfBand;
 
 // Q3. In a single statement declare a legally-named variable and assign a number to it.
-// var my_number = 9;
+// var my_Number = 9;
 
 // Q4. Declare a variable that is a combination of your first and last names. Use camelCase.
 
@@ -148,9 +149,9 @@
 // alert(x)
 
 // Q3. var x = 50;
-
 // var y = x++;
 // What is the value of y?
+
 // y = 51
 
 // Q4. var y = 50;
@@ -537,56 +538,108 @@
 
 // Q3. Declare an array with one element. Add a second element to the beginning of the array. Create an alert whose message is the new first element.
 
+// var myArray = ["Salman"];
+// myArray.unshift("Sarfaraz");
+// alert("The new first element is: " + myArray[0]);
+
 // Q4. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Insert "L" into the array between "M" and "XL".
+
+// var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+// sizes.splice(2,0,"L");
+// alert(sizes);
 
 // Q5. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Copy the first 3 sizes of the array and put them into a new array, regSizes.
 
+// var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+// var regSizes = sizes.slice(0,3)
+// alert(regSizes);
+
 // Q6. var pets = ["dog", "cat", "ox", "duck", "frog"]. Add 2 elements after "dog" and remove "cat", "ox", and "duck".
+
+// var pets = ["dog", "cat", "ox", "duck", "frog"];
+// pets.splice(1,3,"fox","goat");
+// alert(pets);
 
 // Q7. var pets = ["dog", "cat", "ox", "duck", "frog"]; Remove "cat" and "ox".
 
+// var pets = ["dog", "cat", "ox", "duck", "frog"];
+// pets.splice(1,2);
+// alert(pets);
+
 // Q8. var pets = ["dog", "cat", "ox", "duck", "frog", "flea"]; Reduce it to "duck" and "frog" using slice.
 
+// var pets = ["dog", "cat", "ox", "duck", "frog", "flea"];
+// var reducePets = pets.slice(3,5);
+// alert(reducePets);
+
 // ----------------------------------------- Chapter 17 - 20 (For Loops)--------------------------------------
+
 // Q1. Write a statement in which loop is to run 10 times.
+
+// for(var i=0; i<=10; i++){
+//     document.write(i,"<br>");
+// }
 
 // Q2. Code the first line of a for loop with the usual counter name, usual starting value, and usual increment. Run it 12 times using <= to specify how many loops.
 
-// Q3. What are the 5 characters missing from this code, excluding any 
-// spaces that are missing? Type them in order, with no spaces or commas between them.
+// for (var i=0; i<=11; i++);
+
+// Q3. What are the 5 characters missing from this code, excluding any spaces that are missing? Type them in order, with no spaces or commas between them.
 // for var i = 0 i <= 4 i++
 // Note: Complete this statement by yourself
 
-// Q4. Code the first line of a for loop with a counter name that's not i. 
-// Code the usual starting value and usual increment. Run it 100 
-// times using < to specify how many loops.
+// for(var i=0; i<=4; i++)
 
-// Q5. Code the first line of a for loop with the usual counter and the 
-// usual starting value. Run it 3 times using > to specify how many 
-// loops. Decrement it with each iteration.
-// 6. The statement assigns the number of elements in the array to the 
-// variable.
-// 7. Set a variable named “flag” with an initial Boolean value of your 
-// choice.
-// 8. Code the first line of a for loop with the usual counter, the usual 
-// starting value, and the usual incrementing. Limit the number of 
-// loops by the number of elements in the array pets.
-// 9. Coding Exercise:
-// Set a for loop to run 10 iterations.
-// On the second iteration, display the counter in an alert. (It should 
-// be 1.)
-// Break out of the loop.
-// 10. Create an array which contains user names
-// Code a prompt with the message "Enter first name". The user's 
-// response is assigned to firstName.
-// Code the first line of a for loop with the usual counter, the usual 
-// starting value, and the usual incrementing. Limit the number of 
-// loops by the number of elements in the array user names.
-// Code an if statement that tests the presense of (user name) in an 
-// array.
-// If user name match Alert that "Enter". if not then alert ("Please 
-// write correct user name").
-// 11. Complete this code to display an alert if a match isn't found.
+// Q4. Code the first line of a for loop with a counter name that's not i. Code the usual starting value and usual increment. Run it 100 times using < to specify how many loops.
+
+// for(var count=0; count<100; count++);
+
+// Q5. Code the first line of a for loop with the usual counter and the usual starting value. Run it 3 times using > to specify how many loops. Decrement it with each iteration.
+
+// for(var count=3; count>0; count--);
+
+// Q6. The statement assigns the number of elements in the array to the variable.
+
+// var myArray = [1,2,3,4,5];
+// var arrayLength = myArray.length;
+// alert(arrayLength);
+
+// Q7. Set a variable named “flag” with an initial Boolean value of your choice.
+
+// var flag = true;
+
+// Q8. Code the first line of a for loop with the usual counter, the usual starting value, and the usual incrementing. Limit the number of loops by the number of elements in the array pets.
+
+// var pets = ["dog", "cat", "ox", "duck", "frog", "flea"];
+// for (var a=0; a<pets.length; a++){
+//     document.write(a);
+// }
+
+// Q9. Coding Exercise:
+// Set a for loop to run 10 iterations. On the second iteration, display the counter in an alert. (It should be 1.) Break out of the loop.
+
+// for(var counter=0; counter<10; counter++){
+//     alert(counter);
+//     if(counter == 1){
+//         break;
+//     }
+// }
+
+// Q10. Create an array which contains user names Code a prompt with the message "Enter first name". The user's response is assigned to firstName. Code the first line of a for loop with the usual counter, the usual starting value, and the usual incrementing. Limit the number of loops by the number of elements in the array user names. Code an if statement that tests the presense of (user name) in an array. If user name match Alert that "Enter". if not then alert ("Please write correct user name").
+
+// var userName = ["Adeel", "Mubashir", "Salman", "Hamza", "Rashid", "Hassan", "Danish", "Umair", "Aasim"];
+// var firstName = prompt("Enter First Name");
+// for(var i=0; i<userName.length; i++){
+//     if(firstName == userName[i]){
+//         alert("Welcome " + firstName);
+//         break;
+//     }
+// }
+// if(i === userName.length){
+//     alert("Please write correct Username!!");
+// }
+
+// Q11. Complete this code to display an alert if a match isn't found.
 // var matchFound = false;
 // for (var i = 0; i < list.length; i++) {
 //  if (userInput === list[i]) {
@@ -595,20 +648,22 @@
 //  break;
 //  }
 // };
-// 12. var firstArr = [“a”, “b”, “c”, “d”, “e”, “f”];
+
+// var matchFound = false;
+// var list = ["Car", "Bike", "Bus"]; 
+// var userInput = prompt("Enter Value");
+// for (var i = 0; i < list.length; i++) {
+//   if (userInput === list[i]) {
+//     alert("Match Found");
+//     matchFound = true;
+//     break;
+//   }
+// }
+// if (!matchFound) {
+//   alert("Match not Found!!");
+// }
+
+// Q12. var firstArr = [“a”, “b”, “c”, “d”, “e”, “f”];
 // var secondArr = [1, 2, 3, 4, 5, 6];
-// Code the first line of a for loop with the usual counter, the usual 
-// starting value, and the usual incrementing. Limit the number of 
-// loops by the number of elements in the array firstArr.
-// In the scope of main loop Code the nested loop. Limit the number 
-// of nested loops by the number of elements in the array 
-// secondArr.
-// After that concatenate the both loops.
-// Expected Output:
-// a1
-// a2
-// a3
-// a4
-// …
-// f6
+// Code the first line of a for loop with the usual counter, the usual starting value, and the usual incrementing. Limit the number of loops by the number of elements in the array firstArr. In the scope of main loop Code the nested loop. Limit the number of nested loops by the number of elements in the array secondArr. After that concatenate the both loops. Expected Output: a1 a2 a3 a4 … f6.
 
